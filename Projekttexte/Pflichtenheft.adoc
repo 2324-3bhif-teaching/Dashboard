@@ -1,7 +1,7 @@
 = Pflichtenheft
 
 == Beschreibung der Ausgangslage
--
+- Die Ausgangslage des Projektes bestand in der Situation, wo Stationsleiter nicht alle Information von alle Rennen in ihren Gehirnen speichern können.
 
 == Ist-Zustand
 - Das Dashboard ist ein Mittel für Stationsleiter um Informationen über die Rennen schnell und einfach zu bekommen.
@@ -27,7 +27,16 @@
 * Die Projektorganisation wird stets zusammen bleiben und immer bereit für Kommunikation sein
 
 == Mengengerüst
--
+- Die zu erwartenden Datenmengen sind:
+[cols="1,1"]
+|===
+|ID and Name of the Player
+|The Time it took for them to finish
+|The current Players Highscore
+|The All Time Highscore
+|The Data of previous races
+|The currently connected Devices
+|===
 
 == Aufbau und Inhalt der Offerte
 * Benutzerfreundliches UI mit Datensicherheit und Darstellung/Vergleichbarkeit von Informationen
