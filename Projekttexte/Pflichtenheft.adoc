@@ -1,0 +1,15 @@
+= Pflichtenheft
+
+== Beschreibung der Ausgangslage
+
+== Ist-Zustand
+
+== Zielsetzung
+
+== Anforderungen
+
+== Mengengerüst
+
+== Aufbau und Inhalt der Offerte
+
+== Administratives
