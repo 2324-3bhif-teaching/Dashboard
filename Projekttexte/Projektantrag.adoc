@@ -1,0 +1,13 @@
+= Dashboard für Rennstation an TadeoT
+
+== Ist-Zustand
+- Als Stationsleiter muss man einen guten Überblick über den Status und den Informationen der Station haben.
+- Diese Informationen ermittelt man sich, indem man andere Stationsleiter fragt, oder selber nachschaut, was passiert.
+- Es wird mit dieser Vorgehensweise nicht möglich sein, die Informationen visuell darzustellen.
+Dazu kann es mit der Zeit anstrengend werden, wenn man immer zu den anderen Stationsleitern gehen muss.
+
+== Soll-Zustand
+- Ein Dashboard soll sich in der Station befinden, wo alle wichtigen Informationen übersichtlich
+zusammengefasst sind.
+- Das Dashboard soll eine Highscoretabelle, das jetzige Rennen mit dem Spielernamen, Auto und angeschlossenem Controller,
+die vorherigen Rennen und die Zeiten anzeigen.

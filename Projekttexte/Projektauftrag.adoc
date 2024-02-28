@@ -1,0 +1,48 @@
+= Projektantrag / Projektauftrag
+
+=== Projektbezeichnung
+Robodashboard
+
+=== Projektauftraggeber
+Herbert Aitenbichler
+
+== Projekthintergrund
+- Ein Überblick erschaffen für die Stationsmanager über die Rennen.
+
+
+== Projektergebnis
+- Eine funktionierende Applikation, die es den Stationsmanager die Informationssammlung erleichtert.
+- Die messbaren Eigenschaften sind: eine Kontrolle über die Informationen von einem Rennen.
+
+== Projektziele
+- Das Ziel des Projektes ist eine vollständige und funktionierende Desktop-App, die den Stationsmanager Informationen über das Rennen gibt..
+
+== Projektbeschreibung
+- Projekthauptaufgaben: Live Updating von Informationen, Einfügen von neuen Datensätzen, Vergleich zwischen Daten
+
+== Meilensteine
+- Initialisierung
+- Schnittstelle zu Highscore
+- Entwicklung von Funktionalitäten
+- Design des Dashboards
+- Testphase
+- Freistellung
+
+==== Projektstart
+- 7.2.2024
+
+==== Projektende
+- 5.7.2024
+
+==== Projektressourcen
+- Computerhardware, Teammitglieder
+
+==== Projektrisiken
+- Kostenüberschreitungen, minderwertige Arbeit, Verzögerungen aufgrund unvorhergesehene technische Probleme
+
+==== Projektorganisation
+Projektleiter - Moritz Passenbrunner
+Projektteam - Vincent Tea, Stefan Alesi
+
+==== Abschluss des Projektauftrags
+- 7.2.2024
