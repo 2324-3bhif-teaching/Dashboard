@@ -1,15 +1,39 @@
 = Pflichtenheft
 
 == Beschreibung der Ausgangslage
+-
 
 == Ist-Zustand
+- Das Dashboard ist ein Mittel für Stationsleiter um Informationen über die Rennen schnell und einfach zu bekommen.
+- Die bestehenden Systemplattformen werden die Personalrechner von den Stationsleitern sein.
+- Das Dashboard wird auf einer Website Live Informationen streamen können und Stationsleiter können diese auch vergleichen.
 
 == Zielsetzung
+- Die Ziele vom Dashboard sind:
+* Eine qualitative und schnelle Erfahrung für Benutzer
+* Benutzerfreundliche UI, die auch von den dümmsten Usern benutzt werden kann
+* gute Termin-einhaltende und funktionierende Arbeit
+* Erleichterung von Informationen sammlung der Stationsleitern
 
 == Anforderungen
+- Anforderungen an die Applikationssoftware:
+* Benutzerfreundliches Design und Datensicherheit für jeden User
+* tolle Leistungserbringung und feste Robustheit
+- Anforderungen an die Systemplattform:
+* Eine Website, die klare Kommunikation zu Fehler besitzt und jederzeit verfügbar sein kann
+* Es wird eine sehr hohe Leistung erwartet und Sicherheit wird sehr hohe Priorität haben
+- Anbieter bezogene Anforderungen
+* Das Projekt gewährleistet eine Pünktlichkeit auf der man sich immer vertrauen kann
+* Die Projektorganisation wird stets zusammen bleiben und immer bereit für Kommunikation sein
 
 == Mengengerüst
+-
 
 == Aufbau und Inhalt der Offerte
+* Benutzerfreundliches UI mit Datensicherheit und Darstellung/Vergleichbarkeit von Informationen
 
 == Administratives
+- Das Projekt wird in einer Github Repository mit MIT-License verfügbar sein
+- Der Budgetrahmen muss noch besprochen werden
+- Bei Rückfragen zum Pflichtenheft sind wir immer offen
+- Termine werden während dem Projektablauf dargestellt
