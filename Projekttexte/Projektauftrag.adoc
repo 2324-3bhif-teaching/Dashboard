@@ -21,10 +21,11 @@ Herbert Aitenbichler
 - Projekthauptaufgaben: Live Updating von Informationen, Einfügen von neuen Datensätzen, Vergleich zwischen Daten
 
 == Meilensteine
-- Initialisierung
-- Schnittstelle zu Highscore
-- Entwicklung von Funktionalitäten
-- Design des Dashboards
+- Design der Website ist teilweise implementiert
+(Buttons und Funktionalitäten noch nicht funktionsfähig/darstellbar)
+- Anzeige der verbundenen Controller und Spieler
+- Rennen können gespeichert, aktualisiert und angezeigt werden
+- Anzeige und Aktualisierung von Highscore
 - Testphase
 - Freistellung
 
