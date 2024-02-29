@@ -36,6 +36,7 @@
 |The All Time Highscore
 |The Data of previous races
 |The currently connected Devices
+|The Devices used in the race
 |===
 
 == Aufbau und Inhalt der Offerte
