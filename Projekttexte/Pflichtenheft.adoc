@@ -30,13 +30,11 @@
 - Die zu erwartenden Datenmengen sind:
 [cols="1,1"]
 |===
-|ID and Name of the Player
-|The Time it took for them to finish
-|The current Players Highscore
-|The All Time Highscore
-|The Data of previous races
-|The currently connected Devices
-|The Devices used in the race
+|Players: 2
+|The All Time Highscore: 10000
+|The currently connected Devices: 5
+|The Devices used in the race: 5
+|API Calls to Database: 20
 |===
 
 == Aufbau und Inhalt der Offerte
