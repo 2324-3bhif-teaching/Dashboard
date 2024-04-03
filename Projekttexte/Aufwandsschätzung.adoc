@@ -1,0 +1,5 @@
+== Aufwandsschätzung
+
+- Tasks: Documentation, Project Environment Setup, Prototype Creation, Implementation of the Design, Implementation of Certain Features, Testing, Release
+- Time to Complete: 2 Hours, 3 Hours, 2 Days, 5 Days, 7 Days, 3 Days, 4 Days
+- Cost of Completion: 0$, 0$, 0$, Unknown, Unknown, Unknown (<0$), Unknown(<0$)
