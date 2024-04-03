@@ -21,11 +21,15 @@ Herbert Aitenbichler
 - Projekthauptaufgaben: Live Updating von Informationen, Einfügen von neuen Datensätzen, Vergleich zwischen Daten
 
 == Meilensteine
+- Grundlegende Dokumentation und Spezifikation fertigstellung
+- Projektenvironment aufstellen
+- Prototype Erstellung
 - Design der Website ist teilweise implementiert
 (Buttons und Funktionalitäten noch nicht funktionsfähig/darstellbar)
 - Anzeige der verbundenen Controller und Spieler
 - Rennen können gespeichert, aktualisiert und angezeigt werden
 - Anzeige und Aktualisierung von Highscore
+- Finale Quality of Life changes und Vollendung der Logikimplementierung
 - Testphase
 - Freistellung
 
@@ -42,7 +46,6 @@ Herbert Aitenbichler
 - Kostenüberschreitungen, minderwertige Arbeit, Verzögerungen aufgrund unvorhergesehene technische Probleme
 
 ==== Projektorganisation
-Projektleiter - Moritz Passenbrunner
 Projektteam - Vincent Tea, Stefan Alesi
 
 ==== Abschluss des Projektauftrags
