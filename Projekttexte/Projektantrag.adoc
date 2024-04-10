@@ -1,13 +1,11 @@
 = Dashboard für Rennstation an TadeoT
 
 == Ist-Zustand
-- Als Stationsleiter muss man einen guten Überblick über den Status und den Informationen der Station haben.
-- Diese Informationen ermittelt man sich, indem man andere Stationsleiter fragt, oder selber nachschaut, was passiert.
-- Es wird mit dieser Vorgehensweise nicht möglich sein, die Informationen visuell darzustellen.
-Dazu kann es mit der Zeit anstrengend werden, wenn man immer zu den anderen Stationsleitern gehen muss.
+- Als Rennergebnis-Koordinator und Stationsleiter ist es von entscheidender Bedeutung, einen umfassenden Überblick über den aktuellen Status sowie alle relevanten Informationen der Rennstation zu haben.
+- Diese Informationen werden derzeit entweder durch persönliche Befragung anderer Stationsleiter oder durch manuelles Nachschlagen ermittelt, was keine effiziente visuelle Darstellung ermöglicht.
+- Diese Vorgehensweise erfordert Zeit und Aufwand, da häufige persönliche Interaktionen mit anderen Stationsleitern erforderlich sind.
 
 == Soll-Zustand
-- Ein Dashboard soll sich in der Station befinden, wo alle wichtigen Informationen übersichtlich
-zusammengefasst sind.
-- Das Dashboard soll eine Highscoretabelle, das jetzige Rennen mit dem Spielernamen, Auto und angeschlossenem Controller,
-die vorherigen Rennen und die Zeiten anzeigen.
+- Ein professionell gestaltetes Dashboard wird in der Rennstation implementiert, das alle wesentlichen Informationen übersichtlich und in Echtzeit zusammenfasst.
+- Das Dashboard wird eine dynamische Highscoretabelle, aktuelle Renninformationen inklusive Spielername, Fahrzeugtyp und zugehörigem Controller, sowie eine Historie vergangener Rennen und deren Zeiten anzeigen.
+- Durch die Implementierung dieses Dashboards wird eine effiziente und benutzerfreundliche Lösung geschaffen, die Stationsleitern einen schnellen und einfachen Zugriff auf alle relevanten Daten ermöglicht, ohne auf persönliche Befragungen angewiesen zu sein.
