@@ -7,27 +7,26 @@ Robodashboard
 Herbert Aitenbichler
 
 == Projekthintergrund
-- Ein Überblick erschaffen für die Stationsmanager über die Rennen.
+- Die Notwendigkeit ergibt sich, den Stationsmanagern einen umfassenden Überblick über laufende Rennen zu ermöglichen.
 
 
 == Projektergebnis
-- Eine funktionierende Applikation, die es den Stationsmanager die Informationssammlung erleichtert.
-- Die messbaren Eigenschaften sind: eine Kontrolle über die Informationen von einem Rennen.
+- Entwicklung und Implementierung einer professionellen Website, die eine effiziente Informationsbeschaffung für die Stationsmanager gewährleistet.
+- Messbare Ziele: Verbesserte Kontrolle über Renndaten und gesteigerte Ressourceneffizienz für die Stationsmanager.
 
 == Projektziele
-- Das Ziel des Projektes ist eine vollständige und funktionierende Desktop-App, die den Stationsmanager Informationen über das Rennen gibt..
+- Entwicklung einer vollständigen und funktionsfähigen Website zur Bereitstellung relevanter Rennergebnisse für die Stationsmanager.
 
 == Projektbeschreibung
-- Projekthauptaufgaben: Live Updating von Informationen, Einfügen von neuen Datensätzen, Vergleich zwischen Daten
+- Hauptaufgaben umfassen die Echtzeit-Aktualisierung von Rennergebnissen, die nahtlose Integration neuer Renndaten sowie die Analyse und Vergleich der Rennergebnisse.
 
 == Meilensteine
-- Design der Website ist teilweise implementiert
-(Buttons und Funktionalitäten noch nicht funktionsfähig/darstellbar)
-- Anzeige der verbundenen Controller und Spieler
-- Rennen können gespeichert, aktualisiert und angezeigt werden
-- Anzeige und Aktualisierung von Highscore
-- Testphase
-- Freistellung
+- Projektstart und Planung abgeschlossen
+- Prototypentwicklung abgeschlossen
+- Website-Design implementiert
+- Kernfunktionen implementiert
+- Integration und Tests abgeschlossen
+- Benutzerfreigabe
 
 ==== Projektstart
 - 7.2.2024
@@ -36,13 +35,12 @@ Herbert Aitenbichler
 - 5.7.2024
 
 ==== Projektressourcen
-- Computerhardware, Teammitglieder
+- Computerhardware und spezialisierte Teammitglieder
 
 ==== Projektrisiken
-- Kostenüberschreitungen, minderwertige Arbeit, Verzögerungen aufgrund unvorhergesehene technische Probleme
+- Technologische Risiken, Globalrisiken, Cybersecurity-Risiken, komplexe Implementationen
 
 ==== Projektorganisation
-Projektleiter - Moritz Passenbrunner
 Projektteam - Vincent Tea, Stefan Alesi
 
 ==== Abschluss des Projektauftrags

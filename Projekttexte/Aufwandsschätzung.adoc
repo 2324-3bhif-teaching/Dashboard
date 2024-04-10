@@ -1,0 +1,31 @@
+= Aufwandsschätzung
+
+=== Software Development:
+
+- Expert Estimate: 100 hours
+- This includes backend development for data handling, frontend development for the user interface, and integration of live streaming functionalities.
+
+=== UI/UX Design:
+
+- Expert Estimate: 50 hours
+- Creating intuitive and user-friendly designs for the dashboard interface, including prototyping, and iterative design improvements.
+
+=== Testing:
+
+- Expert Estimate: 40 hours
+- Comprehensive testing to ensure the reliability, performance, and security of the application, including unit testing, integration testing, and user acceptance testing.
+
+=== Project Management:
+
+- Expert Estimate: 30 hours
+- Overseeing the project, coordinating tasks and ensuring timely delivery.
+
+=== Documentation:
+
+- Expert Estimate: 40 hours
+- Writing and maintaining project documentation, including requirements specifications, design documents and technical documentation.
+
+=== Risk Management:
+
+- Expert Estimate: 10 hours
+- Identifying potential risks, assessing their impact and likelihood, and implementing mitigation strategies to minimize project disruptions.
