@@ -1,30 +1,30 @@
 = Pflichtenheft
 
 == Beschreibung der Ausgangslage
-- Die Ausgangslage des Projektes bestand in der Situation, wo Stationsleiter nicht alle Information von alle Rennen in ihren Gehirnen speichern können.
+- Die Ausgangssituation des Projektes ergibt sich aus der Herausforderung, dass Stationsleiter nicht in der Lage sind, alle Informationen zu allen Rennen in ihrem Gedächtnis zu behalten.
 
 == Ist-Zustand
-- Das Dashboard ist ein Mittel für Stationsleiter um Informationen über die Rennen schnell und einfach zu bekommen.
-- Die bestehenden Systemplattformen werden die Personalrechner von den Stationsleitern sein.
-- Das Dashboard wird auf einer Website Live Informationen streamen können und Stationsleiter können diese auch vergleichen.
+- Das Dashboard soll den Stationsleitern ermöglichen, schnell und einfach Informationen über die laufenden Rennen abzurufen.
+- Die vorhandenen Systemplattformen werden die Personalcomputer der Stationsleiter sein.
+- Das Dashboard wird live Informationen über eine Website streamen und den Stationsleitern ermöglichen, diese Informationen zu vergleichen.
 
 == Zielsetzung
 - Die Ziele vom Dashboard sind:
-* Eine qualitative und schnelle Erfahrung für Benutzer
-* Benutzerfreundliche UI, die auch von den dümmsten Usern benutzt werden kann
-* gute Termin-einhaltende und funktionierende Arbeit
-* Erleichterung von Informationen sammlung der Stationsleitern
+* Bereitstellung einer qualitativ hochwertigen und schnellen Benutzererfahrung.
+* Entwicklung einer benutzerfreundlichen Benutzeroberfläche, die auch von unerfahrenen Benutzern intuitiv genutzt werden kann.
+* Gewährleistung einer zuverlässigen und funktionellen Arbeitsweise.
+* Vereinfachung der Informationsbeschaffung für die Stationsleiter.
 
 == Anforderungen
 - Anforderungen an die Applikationssoftware:
-* Benutzerfreundliches Design und Datensicherheit für jeden User
-* tolle Leistungserbringung und feste Robustheit
+* Entwicklung einer benutzerfreundlichen Benutzeroberfläche mit hoher Datensicherheit für alle Benutzer
+* Gewährleistung einer hohen Leistungsfähigkeit und Robustheit der Anwendung
 - Anforderungen an die Systemplattform:
-* Eine Website, die klare Kommunikation zu Fehler besitzt und jederzeit verfügbar sein kann
-* Es wird eine sehr hohe Leistung erwartet und Sicherheit wird sehr hohe Priorität haben
+* Einrichtung einer Website mit klaren Fehlerkommunikationen und kontinuierlicher Verfügbarkeit.
+* Sicherstellung einer hohen Leistungsfähigkeit und Priorisierung der Datensicherheit
 - Anbieter bezogene Anforderungen
-* Das Projekt gewährleistet eine Pünktlichkeit auf der man sich immer vertrauen kann
-* Die Projektorganisation wird stets zusammen bleiben und immer bereit für Kommunikation sein
+* Garantie der Pünktlichkeit und Zuverlässigkeit des Projekts.
+* Aufrechterhaltung einer effektiven Projektorganisation und offener Kommunikation
 
 == Mengengerüst
 - Die zu erwartenden Datenmengen sind:
@@ -38,10 +38,10 @@
 |===
 
 == Aufbau und Inhalt der Offerte
-* Benutzerfreundliches UI mit Datensicherheit und Darstellung/Vergleichbarkeit von Informationen
+* Entwicklung einer benutzerfreundlichen Benutzeroberfläche mit hoher Datensicherheit und einfachem Zugang zu Renninformationen.
 
 == Administratives
-- Das Projekt wird in einer Github Repository mit MIT-License verfügbar sein
-- Der Budgetrahmen muss noch besprochen werden
-- Bei Rückfragen zum Pflichtenheft sind wir immer offen
-- Termine werden während dem Projektablauf dargestellt
+- Das Projekt wird in einem GitHub-Repository unter der MIT-Lizenz verfügbar sein.
+- Der Budgetrahmen muss noch festgelegt werden und wird im weiteren Verlauf diskutiert.
+- Bei Fragen zum Pflichtenheft stehen wir jederzeit zur Verfügung.
+- Die Termine werden während des Projektverlaufs transparent dargestellt und eingehalten.
