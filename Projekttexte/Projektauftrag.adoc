@@ -38,7 +38,7 @@ Herbert Aitenbichler
 - Computerhardware und spezialisierte Teammitglieder
 
 ==== Projektrisiken
-- Technologische Risiken, Globalrisiken, Cybersecurity-Risiken
+- Technologische Risiken, Globalrisiken, Cybersecurity-Risiken, komplexe Implementationen
 
 ==== Projektorganisation
 Projektteam - Vincent Tea, Stefan Alesi
