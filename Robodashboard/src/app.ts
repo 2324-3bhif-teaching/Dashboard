@@ -5,7 +5,9 @@
 // import modules
 import express from "express";
 import cors from "cors";
-import { parkingRouter } from "./parking-router";
+import { userRouter } from "./Routers/userRouter";
+import { projectRouter } from "./Routers/projectRouter";
+import { dashboardRouter } from "./Routers/dashboardRouter";
 
 // create express application
 const app = express();
@@ -15,7 +17,9 @@ app.use(cors());
 app.use(express.json());    // parse JSON data and place result in req.body
 
 // mount router(s)
-app.use("/api/parking", parkingRouter);
+app.use("/api/users", userRouter);
+app.use("/api/project", projectRouter);
+app.use("/api/dashboard", dashboardRouter);
 
 // start http server
 app.listen(3000, () => {
