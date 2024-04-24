@@ -23,5 +23,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - name: Navigate to Robodashboard directory
+      run: cd Robodashboard
     - run: npm ci
     - run: npm test
