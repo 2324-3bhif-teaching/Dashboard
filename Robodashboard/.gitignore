@@ -1,6 +1,4 @@
 sample_project/node_modules/
 *.db
+package-lock.json
 coverage/
-=======
-coverage/
-
