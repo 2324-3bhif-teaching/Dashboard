@@ -1,3 +1,6 @@
 sample_project/node_modules/
 *.db
 coverage/
+=======
+coverage/
+

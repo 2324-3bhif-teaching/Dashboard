@@ -22,6 +22,7 @@ Herbert Aitenbichler
 
 == Meilensteine
 - Projektstart und Planung abgeschlossen
+- Mockup ist fertig
 - Prototypentwicklung abgeschlossen
 - Website-Design implementiert
 - Kernfunktionen implementiert
