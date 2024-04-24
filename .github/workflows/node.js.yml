@@ -18,6 +18,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: List files in Robodashboard directory
+      run: ls -R Robodashboard
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
@@ -25,5 +27,7 @@ jobs:
         cache: 'npm'
     - name: Navigate to Robodashboard directory
       run: cd Robodashboard
+    - name: List files after navigation
+      run: ls -R
     - run: npm ci
     - run: npm test
