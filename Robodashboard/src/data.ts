@@ -1,7 +1,7 @@
 import { Database as Driver} from "sqlite3";
 import { open, Database } from "sqlite";
 
-export const dbFileName = '';
+export const dbFileName = 'dashboard.db';
 
 export class DB {
     public static async createDBConnection(): Promise<Database> {
