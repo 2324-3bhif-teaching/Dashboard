@@ -23,6 +23,7 @@ Herbert Aitenbichler
 * Verbundene Geräte
 * Name des derzeitigen Fahrers
 * Länge der Spielzeit sowie Länge des Rennens
+* Vorherige Rennen
 
 == Meilensteine
 - Projektstart und Planung abgeschlossen
