@@ -1,4 +1,4 @@
-import {Unit} from "../src/model";
+import {Unit} from "../data/model";
 
 describe('create', () => {
     test('should create', () => {

@@ -4,12 +4,14 @@ import { open, Database } from "sqlite";
 export const dbFileName = 'dashboard.db';
 
 export class DB {
+    private static initialTableCreationDone: boolean = false;
+
     public static async createDBConnection(): Promise<Database> {
         const db = await open({
             filename: `./${dbFileName}`,
-            driver: Driver
+            driver: Driver,
         });
-		await db.run('PRAGMA foreign_keys = ON');
+        await db.get('PRAGMA foreign_keys = ON');
 
         await DB.ensureTablesCreated(db);
 
@@ -29,7 +31,10 @@ export class DB {
     }
 
     private static async ensureTablesCreated(connection: Database): Promise<void> {
+        if (this.initialTableCreationDone) {
+            return;
+        }
 
+        this.initialTableCreationDone = true;
     }
 }
-

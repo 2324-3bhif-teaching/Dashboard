@@ -5,9 +5,9 @@
 // import modules
 import express from "express";
 import cors from "cors";
-import { userRouter } from "./Routers/userRouter";
-import { projectRouter } from "./Routers/projectRouter";
-import { dashboardRouter } from "./Routers/dashboardRouter";
+import { userRouter } from "../routers/userRouter";
+import { projectRouter } from "../routers/projectRouter";
+import { dashboardRouter } from "../routers/dashboardRouter";
 
 // create express application
 const app = express();
