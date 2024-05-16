@@ -1,4 +1,4 @@
-@baseUrl=http://localhost:3000/api/users
+@baseUrl=http://localhost:3000/api
 
 ###
-GET {{baseUrl}}
+GET {{baseUrl}}/users
