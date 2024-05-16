@@ -35,6 +35,11 @@ export class DB {
             return;
         }
 
+        await connection.run('CREATE TABLE User(' +
+            'ID NUMBER  PRIMARY KEY' +
+            'userName   VARCHAR2(25)' +
+            'password   VARCHAR2(30)');
+
         this.initialTableCreationDone = true;
     }
 }
