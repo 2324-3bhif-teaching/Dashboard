@@ -9,10 +9,15 @@
   "author": "Stefanalesi VincentTea",
   "license": "MIT",
   "dependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.6",
+    "bcryptjs": "^2.4.3",
     "caniuse-lite": "^1.0.30001612",
     "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "express": "^4.17.2",
     "http-status-codes": "^2.2.0",
+    "jsonwebtoken": "^9.0.2",
     "sqlite": "^4.1.2",
     "sqlite3": "^5.1.4"
   },

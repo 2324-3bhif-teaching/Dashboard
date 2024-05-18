@@ -2,3 +2,21 @@
 
 ###
 GET {{baseUrl}}/users
+
+###
+POST {{baseUrl}}/users/register
+Content-Type: application/json
+
+{
+    "username": "testuser",
+    "password": "testpassword"
+}
+
+###
+POST {{baseUrl}}/users/login
+Content-Type: application/json
+
+{
+    "username": "testuser",
+    "password": "testpassword"
+}
