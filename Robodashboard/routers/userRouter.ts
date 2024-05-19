@@ -1,12 +1,12 @@
-import express from 'express';
+import { Router } from 'express';
+import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import { addUser, findUser, validatePassword } from '../data/model/user';
 
-export const userRouter = express.Router();
-
+const router = Router();
 const secretKey = process.env.SECRET_KEY || 'default_secret_key';
 
-userRouter.post('/register', async (req, res) => {
+router.post('/register', async (req, res) => {
     const { username, password } = req.body;
 
     if (findUser(username)) {
@@ -17,7 +17,7 @@ userRouter.post('/register', async (req, res) => {
     res.status(201).json({ message: 'User registered successfully' });
 });
 
-userRouter.post('/login', async (req, res) => {
+router.post('/login', async (req, res) => {
     const { username, password } = req.body;
     const user = findUser(username);
 
@@ -29,3 +29,4 @@ userRouter.post('/login', async (req, res) => {
     res.json({ token });
 });
 
+export { router as userRouter };

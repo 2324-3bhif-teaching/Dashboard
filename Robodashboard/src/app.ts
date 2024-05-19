@@ -22,7 +22,7 @@ const secretKey = process.env.SECRET_KEY || 'default_secret_key';
 // mount middleware
 app.use(cors());
 app.use(express.json());    // parse JSON data and place result in req.body
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname, '/public')));
 
 // mount router(s)
 app.use("/api/users", userRouter);
