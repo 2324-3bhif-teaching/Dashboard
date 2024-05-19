@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
 </head>
-<body>
-    <h1>Welcome to the Dashboard</h1>
-    <p>This is a protected route.</p>
+<body class="bg-gray-100">
+    <div class="min-h-screen flex items-center justify-center">
+        <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+            <h1 class="text-2xl font-bold mb-6 text-center">Welcome to the Dashboard</h1>
+            <p class="mb-4 text-center">This is a protected route.</p>
+            <div class="text-center">
+                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+                    Logout
+                </button>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
