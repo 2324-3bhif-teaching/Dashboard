@@ -29,7 +29,7 @@ app.use("/api/users", userRouter);
 app.use("/api/project", projectRouter);
 app.use("/api/dashboard", dashboardRouter);
 
-app.get('/dashboard', authenticateJWT, (req, res) => {
+app.get('/dashboard', authenticateJWT, (_, res) => {
     res.send('This is the protected dashboard route.');
 });
 

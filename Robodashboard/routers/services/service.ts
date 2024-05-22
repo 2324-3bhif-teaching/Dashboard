@@ -1,5 +1,5 @@
 import {Statement} from "sqlite";
-import {Unit} from "../data/unit";
+import {Unit} from "../../data/unit";
 
 export abstract class ServiceBase {
 
