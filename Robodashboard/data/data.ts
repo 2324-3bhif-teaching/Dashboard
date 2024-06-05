@@ -35,10 +35,13 @@ export class DB {
             return;
         }
 
-        await connection.run('CREATE TABLE User(' +
-            'ID NUMBER  PRIMARY KEY' +
-            'userName   VARCHAR2(25)' +
-            'password   VARCHAR2(30)');
+        await connection.run(`
+            CREATE TABLE IF NOT EXISTS User (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                username TEXT UNIQUE NOT NULL,
+                password TEXT NOT NULL
+            )
+        `);
 
         this.initialTableCreationDone = true;
     }
