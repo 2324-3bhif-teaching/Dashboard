@@ -1,22 +1,33 @@
-@baseUrl=http://localhost:3000/api
+@baseUrl=http://localhost:3000
 
 ###
-GET {{baseUrl}}/users
-
-###
-POST {{baseUrl}}/users/register
+POST {{baseUrl}}/register
 Content-Type: application/json
 
 {
-    "username": "testuser",
-    "password": "testpassword"
+  "username": "testuser",
+  "password": "testpassword"
 }
 
 ###
-POST {{baseUrl}}/users/login
+POST {{baseUrl}}/login
 Content-Type: application/json
 
 {
-    "username": "testuser",
-    "password": "testpassword"
+  "username": "testuser",
+  "password": "testpassword"
+}
+
+###
+GET {{baseUrl}}/profile
+Authorization: Bearer {{token}}
+
+###
+PUT {{baseUrl}}/change-password
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "oldPassword": "testpassword",
+  "newPassword": "newtestpassword"
 }

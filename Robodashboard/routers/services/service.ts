@@ -5,7 +5,7 @@ export abstract class ServiceBase {
 
     protected constructor(protected readonly unit: Unit) {}
 
-    protected async executeStmt(stmt: Statement): Promise<boolean> {
+    async executeStmt(stmt: Statement): Promise<boolean> {
         const result = await stmt.run();
         return result.changes === 1;
     }
