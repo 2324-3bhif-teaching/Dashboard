@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "server-dev": "npx nodemon src/app.ts",
-    "start": "npx ts-node src/app.ts"
+    "start": "npx ts-node src/app.ts",
+    "test": "jest"
   },
   "author": "Stefanalesi VincentTea",
   "license": "MIT",
