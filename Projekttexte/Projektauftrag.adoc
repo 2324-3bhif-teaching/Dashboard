@@ -9,7 +9,6 @@ Herbert Aitenbichler
 == Projekthintergrund
 - Die Notwendigkeit ergibt sich, den Stationsmanagern einen umfassenden Überblick über laufende Rennen zu ermöglichen.
 
-
 == Projektergebnis
 - Entwicklung und Implementierung einer professionellen Website, die eine effiziente Informationsbeschaffung für die Stationsmanager gewährleistet.
 - Messbare Ziele: Verbesserte Kontrolle über Renndaten und gesteigerte Ressourceneffizienz für die Stationsmanager.
@@ -19,6 +18,15 @@ Herbert Aitenbichler
 
 == Projektbeschreibung
 - Hauptaufgaben umfassen die Echtzeit-Aktualisierung von Rennergebnissen, die nahtlose Integration neuer Renndaten sowie die Analyse und Vergleich der Rennergebnisse.
+- Folgende Daten müssen mindestens angezeigt werden:
+* Highscores der Spieler
+* Verbundene Geräte
+* Name des derzeitigen Fahrers
+* Länge der Spielzeit sowie Länge des Rennens
+* Vorherige Rennen
+- QoL Features
+* Sortiermöglichkeiten
+* Verschiedene Designs
 
 == Meilensteine
 - Projektstart und Planung abgeschlossen
