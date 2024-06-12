@@ -20,6 +20,10 @@ dashboardRouter.get('/races', async (req: Request, res: Response) => {
     }
 });
 
+dashboardRouter.post('/races', (req, res) => {
+
+});
+
 dashboardRouter.get('/participants', async (req: Request, res: Response) => {
     const unit = await Unit.create(true);
     try {
