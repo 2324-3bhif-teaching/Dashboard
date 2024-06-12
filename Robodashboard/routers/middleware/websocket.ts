@@ -52,7 +52,7 @@ function calculateNewDuration(raceId: number): string {
     // Implement your logic to calculate the new duration for the race with the given raceId
     // This could involve querying the database for the race start time and calculating the elapsed time
     // Return the new duration as a string (e.g., 'HH:MM:SS')
-    return '00:00:00'; // Placeholder for demonstration
+    return '00:00.00'; // Placeholder for demonstration
 }
 
 function updateRaceDuration(raceId: number, newDuration: string) {

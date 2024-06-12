@@ -1,6 +1,11 @@
+import {Participant} from "../../../../data/model/participant";
+import {Race} from "../../../../data/model/race";
+
 document.addEventListener('DOMContentLoaded', () => {
     init();
 });
+
+const racesUrl = 'http://localhost:3000/api/races';
 
 let stopwatchInterval;
 let elapsedSeconds = 0;
@@ -95,4 +100,20 @@ function stopTime() {
     clearInterval(stopwatchInterval);
     stopwatchInterval = null;
     elapsedSeconds = 0;
+}
+
+async function fetchRestEndpoint(route: string, method: "GET" |"POST" |"PUT" |"DELETE" |" PATCH", data?: object): Promise<any> {
+    let options: any = { method };
+    if (data) {
+        options.headers = { "Content-Type": "application/json" };
+        options.body = JSON.stringify(data);
+    }
+    const res = await fetch(route, options);
+    if (!res.ok) {
+        const error = new Error(`${method} ${res.url} ${res.status} (${res.statusText})`);
+        throw error;
+    }
+    if (res.status !== 204) {
+        return await res.json();
+    }
 }
