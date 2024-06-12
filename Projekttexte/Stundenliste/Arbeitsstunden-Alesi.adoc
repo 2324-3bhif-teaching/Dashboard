@@ -7,5 +7,6 @@
 |  24.04.2024 |         2   |   Github Actions & Deployment |   19 & 35
 |  25.04.2024 |         2   |   Start of Unit Testing & Dockerization Continuation | 19 & 35
 |  18.05.2024 |         4   |   Backend Logic | 17
-|  20.05.2024 |           2      | Simple Frontend Design   |  16 |
+|  20.05.2024 |           2      | Simple Frontend Design   |  16 
+|  05.06.2024 |     3       | Backend | 22
 |===
