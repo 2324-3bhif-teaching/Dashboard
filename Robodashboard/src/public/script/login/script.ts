@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (registerForm) {
         registerForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
+            const username = document.getElementById('username').innerHTML;
+            const password = document.getElementById('password').innerHTML;
 
             try {
                 const response = await fetch('/api/users/register', {
@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (loginForm) {
         loginForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
+            const username = document.getElementById('username').innerHTML;
+            const password = document.getElementById('password').innerHTML;
 
             try {
                 const response = await fetch('/api/users/login', {
