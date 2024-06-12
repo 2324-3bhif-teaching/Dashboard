@@ -36,10 +36,55 @@ export class DB {
         }
 
         await connection.run(`
+            CREATE TABLE IF NOT EXISTS Race (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                name TEXT NOT NULL,
+                date TEXT NOT NULL,
+                duration INTEGER NOT NULL, 
+            )
+        `);
+
+        await connection.run(`
+            CREATE TABLE IF NOT EXISTS Robot (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                name TEXT NOT NULL,
+                type TEXT NOT NULL,
+                manufacturer TEXT NOT NULL,
+                race_id INTEGER NOT NULL,
+                user_id INTEGER NOT NULL, 
+                FOREIGN KEY (race_id) REFERENCES Race(id)
+            )
+        `);
+
+        await connection.run(`
             CREATE TABLE IF NOT EXISTS User (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
-                username TEXT UNIQUE NOT NULL,
-                password TEXT NOT NULL
+                name TEXT NOT NULL,
+                device_id TEXT NOT NULL 
+            )
+        `);
+
+        await connection.run(`
+            CREATE TABLE IF NOT EXISTS RaceLog (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                race_id INTEGER NOT NULL,
+                robot_id INTEGER NOT NULL,
+                event TEXT NOT NULL,
+                timestamp TEXT NOT NULL,
+                FOREIGN KEY (race_id) REFERENCES Race(id),
+                FOREIGN KEY (robot_id) REFERENCES Robot(id)
+            )
+        `);
+
+        await connection.run(`
+            CREATE TABLE IF NOT EXISTS RaceResult (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                race_id INTEGER NOT NULL,
+                robot_id INTEGER NOT NULL,
+                time TEXT NOT NULL,
+                status TEXT NOT NULL, 
+                FOREIGN KEY (race_id) REFERENCES Race(id),
+                FOREIGN KEY (robot_id) REFERENCES Robot(id)
             )
         `);
 
