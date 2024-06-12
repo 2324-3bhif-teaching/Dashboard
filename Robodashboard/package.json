@@ -24,6 +24,7 @@
     "keycloak": "^1.2.0",
     "keycloak-connect": "^24.0.3",
     "keycloak-js": "^24.0.3",
+    "socket.io": "^4.7.5",
     "sqlite": "^4.1.2",
     "sqlite3": "^5.1.4"
   },
