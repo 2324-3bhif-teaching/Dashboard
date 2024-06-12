@@ -8,5 +8,6 @@
 |  25.04.2024 |         2   |   Start of Unit Testing & Dockerization Continuation | 19 & 35
 |  18.05.2024 |         4   |   Backend Logic | 17
 |  20.05.2024 |           2      | Simple Frontend Design   |  16 
-|  05.06.2024 |     3       | Backend | 22
+|  05.06.2024 |     3       | Login-System | 53
+|  06.06.2024 |     2       |  Live Data Representation  |  52
 |===
