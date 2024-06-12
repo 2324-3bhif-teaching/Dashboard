@@ -41,7 +41,7 @@ export class DB {
                 name TEXT NOT NULL,
                 date TEXT NOT NULL,
                 duration INTEGER NOT NULL, 
-            )
+            );
         `);
 
         await connection.run(`
@@ -53,7 +53,7 @@ export class DB {
                 race_id INTEGER NOT NULL,
                 user_id INTEGER NOT NULL, 
                 FOREIGN KEY (race_id) REFERENCES Race(id)
-            )
+            );
         `);
 
         await connection.run(`
@@ -61,7 +61,7 @@ export class DB {
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 name TEXT NOT NULL,
                 device_id TEXT NOT NULL 
-            )
+            );
         `);
 
         await connection.run(`
@@ -73,7 +73,7 @@ export class DB {
                 timestamp TEXT NOT NULL,
                 FOREIGN KEY (race_id) REFERENCES Race(id),
                 FOREIGN KEY (robot_id) REFERENCES Robot(id)
-            )
+            );
         `);
 
         await connection.run(`
@@ -85,7 +85,7 @@ export class DB {
                 status TEXT NOT NULL, 
                 FOREIGN KEY (race_id) REFERENCES Race(id),
                 FOREIGN KEY (robot_id) REFERENCES Robot(id)
-            )
+            );
         `);
 
         this.initialTableCreationDone = true;
