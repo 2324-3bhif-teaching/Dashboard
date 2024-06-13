@@ -118,9 +118,9 @@ async function stopTime() {
     const p3Time = document.getElementById('p3-time')!.textContent;
     const p4Time = document.getElementById('p4-time')!.textContent;
 
-    // Send the race times to the server
+    // Send the races infos to the server
     try {
-        await fetchRestEndpoint('/api/race/updateDuration', 'POST', {
+        await fetchRestEndpoint('/api/races', 'POST', {
             currentTime,
             p1Time,
             p2Time,

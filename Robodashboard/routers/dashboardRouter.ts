@@ -10,7 +10,7 @@ dashboardRouter.get('/races', async (req: Request, res: Response) => {
     const unit = await Unit.create(true);
     try {
         const racesData = await Race.getAll(unit);
-        const races: Race[] = racesData.map(race => new Race(race.id, race.name, race.date, race.duration));
+        const races: Race[] = racesData.map(race => new Race(race.raceId, race.date, race.raceTimes));
         res.json(races);
     } catch (error) {
         console.error('Error retrieving races:', error);
@@ -20,16 +20,12 @@ dashboardRouter.get('/races', async (req: Request, res: Response) => {
     }
 });
 
-dashboardRouter.post('/races', (req, res) => {
-
-});
-
 dashboardRouter.get('/participants', async (req: Request, res: Response) => {
     const unit = await Unit.create(true);
     try {
         const participantsData = await Participant.getAll(unit);
         const participants: Participant[] = participantsData.map(participant =>
-            new Participant(participant.id, participant.raceId, participant.name, participant.age)
+            new Participant(participant.participantId, participant.name)
         );
         res.json(participants);
     } catch (error) {
@@ -41,9 +37,11 @@ dashboardRouter.get('/participants', async (req: Request, res: Response) => {
 });
 
 dashboardRouter.post('/races', async (req: Request, res: Response) => {
-    const { name, date, location, duration } = req.body;
+    const { raceId, date, raceTime, names } = req.body;
     try {
-        const newRace = await RaceService.addRace(name, date, location, duration);
+        const newRace = new Race(raceId, date, raceTime);
+        const participants: Participant[] = [];
+        await RaceService.addRace(newRace, participants);
         res.status(201).json(newRace);
     } catch (error) {
         console.error('Error adding race:', error);
