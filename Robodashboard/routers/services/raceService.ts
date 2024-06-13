@@ -19,7 +19,7 @@ export class RaceService extends ServiceBase{
         try {
             const participantsData = await Participant.getAll(unit);
             return participantsData.map(participant =>
-                new Participant(participant.participantId, participant.name)
+                new Participant(participant.name)
             );
         } catch (error) {
             console.error('Error retrieving participants:', error);

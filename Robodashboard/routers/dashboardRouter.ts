@@ -25,7 +25,7 @@ dashboardRouter.get('/participants', async (req: Request, res: Response) => {
     try {
         const participantsData = await Participant.getAll(unit);
         const participants: Participant[] = participantsData.map(participant =>
-            new Participant(participant.participantId, participant.name)
+            new Participant(participant.name)
         );
         res.json(participants);
     } catch (error) {
@@ -40,7 +40,15 @@ dashboardRouter.post('/races', async (req: Request, res: Response) => {
     const { raceId, date, raceTime, names } = req.body;
     try {
         const newRace = new Race(raceId, date, raceTime);
+
         const participants: Participant[] = [];
+
+        let splitNames = names.split(";");
+
+        for (const name of splitNames) {
+            participants.push(new Participant(name));
+        }
+
         await RaceService.addRace(newRace, participants);
         res.status(201).json(newRace);
     } catch (error) {
