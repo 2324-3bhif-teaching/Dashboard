@@ -1,9 +1,0 @@
-= Meilensteine
-
-- Projektstart und Planung abgeschlossen    |   28.02.2024
-- Mockup ist fertig |   06.03.2024
-- Prototypentwicklung abgeschlossen |   27.03.2024
-- Website-Design implementiert  |   22.05.2024
-- Kernfunktionen implementiert  |   05.06.2024
-- Integration und Tests abgeschlossen   |   12.06.2024
-- Benutzerfreigabe  |   19.06.2024
