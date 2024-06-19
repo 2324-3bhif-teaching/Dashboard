@@ -37,56 +37,34 @@ export class DB {
 
         await connection.run(`
             CREATE TABLE IF NOT EXISTS Race (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                name TEXT NOT NULL,
+                raceId INTEGER PRIMARY KEY AUTOINCREMENT,
                 date TEXT NOT NULL,
-                duration INTEGER NOT NULL, 
-            )
+                raceTimes TEXT NOT NULL 
+            );
         `);
 
-        await connection.run(`
-            CREATE TABLE IF NOT EXISTS Robot (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                name TEXT NOT NULL,
-                type TEXT NOT NULL,
-                manufacturer TEXT NOT NULL,
-                race_id INTEGER NOT NULL,
-                user_id INTEGER NOT NULL, 
-                FOREIGN KEY (race_id) REFERENCES Race(id)
-            )
-        `);
+        console.log('Created Race table');
 
         await connection.run(`
-            CREATE TABLE IF NOT EXISTS User (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                name TEXT NOT NULL,
-                device_id TEXT NOT NULL 
-            )
+            CREATE TABLE IF NOT EXISTS Participant (
+                participantId INTEGER PRIMARY KEY AUTOINCREMENT,
+                name TEXT NOT NULL
+            );
         `);
 
-        await connection.run(`
-            CREATE TABLE IF NOT EXISTS RaceLog (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                race_id INTEGER NOT NULL,
-                robot_id INTEGER NOT NULL,
-                event TEXT NOT NULL,
-                timestamp TEXT NOT NULL,
-                FOREIGN KEY (race_id) REFERENCES Race(id),
-                FOREIGN KEY (robot_id) REFERENCES Robot(id)
-            )
-        `);
+        console.log('Created Participant table')
 
         await connection.run(`
-            CREATE TABLE IF NOT EXISTS RaceResult (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                race_id INTEGER NOT NULL,
-                robot_id INTEGER NOT NULL,
-                time TEXT NOT NULL,
-                status TEXT NOT NULL, 
-                FOREIGN KEY (race_id) REFERENCES Race(id),
-                FOREIGN KEY (robot_id) REFERENCES Robot(id)
-            )
+            CREATE TABLE IF NOT EXISTS Race_Participant (
+                raceId INTEGER NOT NULL,
+                participantId INTEGER NOT NULL,
+                PRIMARY KEY (raceId, participantId),
+                FOREIGN KEY (raceId) REFERENCES race(raceId),
+                FOREIGN KEY (participantId) REFERENCES participant(participantId)
+            );
         `);
+
+        console.log('Created Race_Participant table');
 
         this.initialTableCreationDone = true;
     }

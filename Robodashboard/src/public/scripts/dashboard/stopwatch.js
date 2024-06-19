@@ -39,17 +39,42 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 var stopwatchInterval;
 var elapsedSeconds = 0;
+var p1 = false;
+var p2 = false;
+var p3 = false;
+var p4 = false;
 function init() {
     document.getElementById('start-btn').addEventListener('click', function () {
+        p1 = true;
+        p2 = true;
+        p3 = true;
+        p4 = true;
         if (!stopwatchInterval) {
             stopwatchInterval = setTimeout(updateStopwatch, 1);
         }
     });
     document.getElementById('stop-btn').addEventListener('click', function () {
-        clearInterval(stopwatchInterval);
-        stopwatchInterval = null;
-        elapsedSeconds = 0;
-        document.getElementById('stopwatch').textContent = "00:00:00";
+        stopTime();
+    });
+    document.getElementById('stop-p1-btn').addEventListener('click', function () {
+        p1 = false;
+    });
+    document.getElementById('stop-p2-btn').addEventListener('click', function () {
+        p2 = false;
+    });
+    document.getElementById('stop-p3-btn').addEventListener('click', function () {
+        p3 = false;
+    });
+    document.getElementById('stop-p4-btn').addEventListener('click', function () {
+        p4 = false;
+    });
+    document.getElementById('reset-btn').addEventListener('click', function () {
+        stopTime();
+        document.getElementById('current-time').textContent = '00:00.00';
+        document.getElementById('p1-time').textContent = '00:00.00';
+        document.getElementById('p2-time').textContent = '00:00.00';
+        document.getElementById('p3-time').textContent = '00:00.00';
+        document.getElementById('p4-time').textContent = '00:00.00';
     });
     setTimeout(updateConnectedDevices, 500);
 }
@@ -65,10 +90,31 @@ function updateStopwatch() {
             minutes = String(Math.floor(elapsedSeconds / 3600)).padStart(2, '0');
             seconds = String(Math.floor((elapsedSeconds % 3600) / 60)).padStart(2, '0');
             milliseconds = String(elapsedSeconds % 60).padStart(2, '0');
-            document.getElementById('stopwatch').textContent = "".concat(minutes, ":").concat(seconds, ".").concat(milliseconds);
+            if (!p1 && !p2 && !p3 && !p4) {
+                stopTime();
+                return [2 /*return*/];
+            }
+            document.getElementById('current-time').textContent = "".concat(minutes, ":").concat(seconds, ".").concat(milliseconds);
+            if (p1) {
+                document.getElementById('p1-time').textContent = "".concat(minutes, ":").concat(seconds, ".").concat(milliseconds);
+            }
+            if (p2) {
+                document.getElementById('p2-time').textContent = "".concat(minutes, ":").concat(seconds, ".").concat(milliseconds);
+            }
+            if (p3) {
+                document.getElementById('p3-time').textContent = "".concat(minutes, ":").concat(seconds, ".").concat(milliseconds);
+            }
+            if (p4) {
+                document.getElementById('p4-time').textContent = "".concat(minutes, ":").concat(seconds, ".").concat(milliseconds);
+            }
             // Call setTimeout again to schedule the next update
             stopwatchInterval = setTimeout(updateStopwatch, 1);
             return [2 /*return*/];
         });
     });
+}
+function stopTime() {
+    clearInterval(stopwatchInterval);
+    stopwatchInterval = null;
+    elapsedSeconds = 0;
 }
