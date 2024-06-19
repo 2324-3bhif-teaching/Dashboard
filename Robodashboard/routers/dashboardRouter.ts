@@ -1,6 +1,6 @@
 import express, { Request, Response } from 'express';
 import { RaceService } from './services/raceService';
-import { Unit } from '../data/Unit';
+import { Unit } from '../data/unit';
 import { Race } from '../data/model/race';
 import { Participant } from '../data/model/participant';
 
